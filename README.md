@@ -35,13 +35,15 @@ You are using Umbraco headless with the Content Delivery API and you also use uS
 - Run `npm install`
 - Run `node typegenerator.js`
 
-This uses the default paths: `usyncPath` set to `/uSync/v9` and `output` set to `./output/content-delivery-api-types.ts`.
+This uses the default paths: `usyncPath` set to `./uSync/v9` and `output` set to `./output/content-delivery-api-types.ts`.
 
 You can override these like so:
 
 `node typegenerator.js -u ../umbraco/uSync/v9 -o ../frontend/types/mycooltypes.ts`
 
 **It is recommended, if using Docker compose during local development, to run this in a node container and mount the needed paths accordingly.**
+
+It will then keep watching for changes/saves to your uSync ContentTypes and DataTypes config files and continually regenerate the typescript definitions into the output file.
 
 ## What does it generate?
 
