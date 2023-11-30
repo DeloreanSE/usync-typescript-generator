@@ -20,6 +20,7 @@ This is what is does roughly:
 - Creates a bucket (just a javascript object) of (soon to be) 'types'
 - Add some default always included types to this bucket.
 - Looks through your uSync config files, and adds new types accordingly.
+- Builds an output file with all types exported as typescript types.
 
 It also supports compositions, which is extra nice.
 
